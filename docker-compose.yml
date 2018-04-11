@@ -1,0 +1,16 @@
+version: '2'
+services:
+  golang-firestore:
+    # container_name: golang-firestore
+    build: .
+    image: golang:1.9-alpine
+    restart: always
+    volumes:
+      - ".:/go/src/golang-firestore"
+    working_dir: /go/src/golang-firestore
+    ports:
+      - "9372:9372"
+    command: go run main.go
+      # - go get ./...
+      # - go run main.go
+

@@ -1,0 +1,2 @@
+FROM golang:1.9-alpine
+MAINTAINER arywidiantara33@gmail.com
